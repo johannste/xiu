@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+            font-family: "Microsoft YaHei UI", Helvitica, serif;
+            font-size: 14px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header img {
+            width: 100%;
+        }
+
+        .desc {
+            display: flex;
+            margin-top: 6.5px;
+            margin-bottom: 5px
+        }
+
+        .desc-line {
+            margin: 11px 0;
+        }
+
+        .desc-title {
+            color: #8e9093;
+            padding-left: 20px;
+        }
+
+        .warn {
+            color: #f5ae2a;
+            font-size: 14px;
+        }
+
+        .detail-seprator {
+            height: 30px;
+            line-height: 30px;
+            background-color: #F4F5F7;
+            margin-right: 0;
+            color: #C3C4CA;
+        }
+
+        .detail-title {
+            color: #A0A0A3;
+            padding-left: 16px;
+        }
+
+        .my, .pro {
+            padding-top: 16px;
+            padding-left: 16px;
+            margin-bottom: 15px;
+        }
+
+        .pro {
+            margin-bottom: 27px;
+        }
+
+        .my-title, .pro-title {
+            color: #A0A0A3;
+            margin-right: 14px;
+        }
+
+        .my-line {
+            margin: 4px 0;
+        }
+
+        .pro-line {
+            margin: 8px 0;
+        }
+
+        .strong {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #498BCC;
+        }
+
+
+        .my-title > i {
+            border: 1px solid #4880E3;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            line-height: 16.5px;
+            margin-right: 5px;
+        }
+
+        .line-flex {
+            display: flex;
+            justify-content: space-between;
+            width: 97%
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .input {
+            width: 305px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #F5F6F8;
+            border: #DBDBE4 1px solid;
+            border-radius: 5px;
+            padding-left: 10px;
+            color: #A2A3A5;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #F4F5F7;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer > button {
+            background-color: #4480F0;
+            width: 342px;
+            height: 38px;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            border: none;
+        }
+
+        .jd {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            height: 16px;
+        }
+
+        .jd_box {
+            background: url(images/index_06.jpg) left center repeat-x;
+            height: 100%;
+            width: 300%;
+            animation: ab 6s linear infinite;
+            position: absolute;
+            background-size: auto 100%;
+        }
+
+        @keyframes ab {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: -112%;
+            }
+        }
+
+        .jd .time {
+            width: 185px;
+            line-height: 16px;
+            text-align: center;
+            border-radius: 5.6px;
+            background: rgba(0, 0, 0, 0.44);
+            z-index: 999;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #ffffffd4;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="images/x_02.jpg" alt="图片未加载">
+    <img src="images/x_03.jpg" alt="图片未加载">
+    <img src="images/index_03.jpg" alt="图片未加载">
+    <div class="jd">
+        <div class="jd_box"></div>
+        <div class="time">
+            当前时间:<span id="time" style="font-size: 12px">2020-01-01 12:00:00</span>
+        </div>
+    </div>
+</header>
+<article>
+    <section>
+        <div class="desc">
+            <div style="flex-grow: 1">
+                <span class="desc-title">请假类型：</span><span>事假</span>
+            </div>
+            <div style="flex-grow: 1">
+                <span class="desc-title" style="padding-left:0;margin-left: -21px">需要离校：</span><span>离校</span>
+            </div>
+        </div>
+        <div class="desc-line">
+            <span class="desc-title">销假规则：</span><span class="warn">离校请假需要销假，非离校请假无需销假</span>
+        </div>
+        <div class="desc-line">
+            <span class="desc-title">实际休假时间：</span>
+            <span>-</span>
+        </div>
+    </section>
+    <section class="detail">
+        <div class="detail-title detail-seprator">请假详情</div>
+    </section>
+    <section class="my">
+        <div class="my-title strong">我的 请假申请</div>
+        <div class="my-line">
+            <span class="my-title">开始时间：</span>
+            <span>11-6 12:00</span>
+        </div>
+        <div class="my-line">
+            <span class="my-title">结束时间：</span>
+            <span>11-8 18:00</span>
+        </div>
+        <div class="my-line">
+            <span class="my-title">审批流程：</span>
+            <span>共1步 <a href="">查看></a></span>
+        </div>
+        <div class="my-line">
+            <span class="my-title" style="margin-right: 0">紧急联系人：</span>
+            <span>13141235478</span>
+        </div>
+        <div class="my-line">
+            <span class="my-title">请假原因：</span>
+            <span>回家</span>
+        </div>
+        <div class="my-line">
+            <span class="my-title">发起位置：</span>
+            <span><a href="">辽宁省大连市金昌街1</a></span>
+        </div>
+        <div class="my-line">
+            <span class="my-title" style="margin-right: 28px;">抄送人：</span>
+            <span>无</span>
+        </div>
+    </section>
+    <section style="background-color:#F4F5F7;height: 14px"></section>
+    <section class="pro">
+        <div class="pro-title strong">审批状态</div>
+        <div class="pro-line line-flex">
+            <span class="my-title flex"><i></i>潘美燕 - 发起申请</span>
+            <span class="my-title">11-5 08:00</span>
+        </div>
+        <div class="pro-line line-flex">
+            <span class="my-title flex"><i style="border: 1px solid #31C885"></i>一级：[辅导员]王丽 - 审批<span
+                    style="color: #31C885">通过</span></span>
+            <span class="my-title">11-5 11:00</span>
+        </div>
+        <div class="input">审批意见：无</div>
+    </section>
+</article>
+<footer>
+    <button>去销假</button>
+</footer>
+<script>
+    var time = setInterval(function () {
+        var myDate = new Date;
+        var year = myDate.getFullYear();
+        var mon = myDate.getMonth() + 1;
+        var date = myDate.getDate();
+        var h = myDate.getHours();
+        var m = myDate.getMinutes();
+        var s = myDate.getSeconds();
+        $('#time').html(year + '-' + mon + '-' + date + ' ' + h + ':' + m + ':' + s);
+    }, 1000)
+</script>
+</body>
+</html>

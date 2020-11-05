@@ -1,0 +1,200 @@
+/*@charset "utf-8";*/
+
+/*body {*/
+/*    background: #f0f1f3;*/
+/*    font: 67.1875px tahoma, arial, sans-serif;*/
+/*}*/
+
+/*.banner {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.textWarp {*/
+/*    background: #fff;*/
+/*    padding: .2rem 0;*/
+/*}*/
+
+/*.banner img {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
+
+/*.text {*/
+/*    width: 100%;*/
+/*    padding: 0 .3rem 0 .3rem;*/
+/*    box-sizing: border-box;*/
+/*    background: #fff;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.text .left {*/
+/*    width: 1.95rem;*/
+/*    float: left;*/
+/*    line-height: .46rem;*/
+/*    font-size: .26rem;*/
+/*    color: #8e9093;*/
+/*}*/
+
+/*.text .right {*/
+/*    width: calc(100% - 1.95rem);*/
+/*    float: left;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.text .right input {*/
+/*    float: left;*/
+/*    display: block;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    color: #333;*/
+/*    height: .46rem;*/
+/*    font-size: .24rem;*/
+/*}*/
+
+/*.text .right span {*/
+/*    display: inline-block;*/
+/*    font-size: .26rem;*/
+/*    line-height: .46rem;*/
+/*    color: #8e9093;*/
+/*}*/
+
+/*.text .right a {*/
+/*    display: block;*/
+/*    height: .46rem;*/
+/*    line-height: .46rem;*/
+/*    font-size: .26rem;*/
+/*    float: left;*/
+/*    color: #3b83ba;*/
+/*}*/
+
+/*!* --------------index-start-------------- *!*/
+/*.tit {*/
+/*    width: 100%;*/
+/*    height: .6rem;*/
+/*    background: #f4f8fb;*/
+/*    color: #bec2c6;*/
+/*    line-height: .6rem;*/
+/*    padding: 0 .35rem;*/
+/*    border-bottom: .02rem solid #f0f1f4;*/
+/*    color: #b1b5b8;*/
+/*    box-sizing: border-box;*/
+/*    font-size: .26rem;*/
+/*}*/
+
+/*.textWarp h2 {*/
+/*    height: .95rem;*/
+/*    padding: 0 .3rem;*/
+/*    box-sizing: border-box;*/
+/*    line-height: .95rem;*/
+/*    font-size: .32rem;*/
+/*    color: #06070d;*/
+/*}*/
+
+/*.list {*/
+/*    background: #fff;*/
+/*    padding-bottom: .45rem;*/
+/*}*/
+
+/*.list h2 {*/
+/*    height: .95rem;*/
+/*    line-height: .95rem;*/
+/*    width: 100%;*/
+/*    padding: 0 .3rem;*/
+/*    box-sizing: border-box;*/
+/*    font-size: .32rem;*/
+/*    color: #333;*/
+/*}*/
+
+/*.list_box {*/
+/*    width: 100%;*/
+/*    padding: 0 .5rem 0 .7rem;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*.list_box ul {*/
+/*    width: 100%;*/
+/*    border-left: .02rem solid #e6e2e5;*/
+/*}*/
+
+/*.list_box ul li {*/
+/*    width: 100%;*/
+/*    height: .36rem;*/
+/*    position: relative;*/
+/*    margin-bottom: .2rem;*/
+/*}*/
+
+/*.list_box ul li span {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    display: block;*/
+/*    width: .36rem;*/
+/*    height: .36rem;*/
+/*    box-sizing: border-box;*/
+/*    border-radius: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    background: #fff;*/
+/*}*/
+
+/*.list_box ul li:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
+
+/*.list_box ul li input {*/
+/*    display: block;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    height: 100%;*/
+/*    background: none;*/
+/*}*/
+
+/*.list_box ul li .left {*/
+/*    width: 3rem;*/
+/*    float: left;*/
+/*    text-indent: .3rem;*/
+/*    font-size: .22rem;*/
+/*    color: #858585;*/
+/*}*/
+
+/*.list_box ul li .right {*/
+/*    float: right;*/
+/*    width: 1.7rem;*/
+/*    text-align: right;*/
+/*    font-size: .22rem;*/
+/*    color: #858585;*/
+/*}*/
+
+/*.list_box ul li p {*/
+/*    display: inline-block;*/
+/*    line-height: .36rem;*/
+/*    float: left;*/
+/*    color: #31b187;*/
+/*    font-size: .2rem;*/
+/*}*/
+
+/*.list h3 {*/
+/*    width: 5rem;*/
+/*    margin-left: 1rem;*/
+/*    height: .76rem;*/
+/*    border: .02rem solid #dadfe2;*/
+/*    background: #f4f8fb;*/
+/*    border-radius: .08rem;*/
+/*    font-size: .26rem;*/
+/*    padding: 0 .2rem;*/
+/*    box-sizing: border-box;*/
+/*    line-height: .72rem;*/
+/*    margin-top: .2rem;*/
+/*}*/
+
+/*.list h3 input {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    outline: none;*/
+/*    background: none;*/
+/*    border: none;*/
+/*    color: #86888b;*/
+/*}*/
+
+
